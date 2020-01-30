@@ -1,19 +1,18 @@
-#ifndef _HiLmy_h_
+#ifndef _Hilmy_h_
 #define _Hilmy_h_
 
 #include <stdio.h>
 #include <stdlib.h>
 
 //Struct Stats
-typedef struct Stats
-{
+typedef struct{
     /* data */
     int Hlt;
     int Hpy;
     int Soc;
     int Hyg;
     int Mny;
-};
+}   Stats;
 
 // Selektor
 #define Hlt(S) (S).Hlt
@@ -23,40 +22,41 @@ typedef struct Stats
 #define Mny(S) (S).Mny
 
 //Konstruktor
-void StartStats(Stats* S)
+void StartStats(Stats* S);
 //Inisiasi status awal
 
-void Makan(Stats* S)
+void Makan(Stats* S);
 //fungsi kegiatan makan
 
-void Kerja(Stats* S)
+void Kerja(Stats* S);
 //fungsi kegiatan kerja
 
-void Nongkrong(Stats* S)
+void Nongkrong(Stats* S);
 //fungsi kegiatan nongkrong
 
-void MainHP(Stats* S)
+void MainHP(Stats* S);
 //fungsi kegiatan main hp
 
-void Mandi(Stats* S)
+void Mandi(Stats* S);
 //fungsi kegiatan mandi
 
-void Olahraga(Stats* S)
+void Olahraga(Stats* S);
 //fungsi kegiatan olahraga
 
-void Belanja(Stats* S)
+void Belanja(Stats* S);
 //fungsi kegiatan belanja
 
-void MainBG(Stats* S)
+void MainBG(Stats* S);
 //fungsi kegiatan main board game
 
-void Nonton(Stats* S)
+void Nonton(Stats* S);
 //fungsi kegiatan nonton film
 
-void Bersih(Stats* S)
+void Bersih(Stats* S);
 //fungsi kegiatan bersih-bersih rumah
 
-void KurangHlt(Stats* S, Int W)
+void KurangHlt(Stats* S, int W);
 //fungsi untuk mengurangi health tiap ronde
+
 
 #endif

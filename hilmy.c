@@ -8,6 +8,10 @@ void StartStats(Stats* S){
     Mny(*S) = 0;
 }
 
+void KurangHlt(Stats* S, int W){
+    Hlt(*S) -= W;
+}
+
 void Makan(Stats* S){
     if (Mny(*S) < 5){
         printf("Uang tidak cukup\n");
@@ -18,7 +22,7 @@ void Makan(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 5;
-    KurangHlt(*S, 5);
+    KurangHlt(S, 5);
 }
 
 void Kerja(Stats* S){
@@ -27,7 +31,7 @@ void Kerja(Stats* S){
         Hpy(*S) = 0;
     }
     Mny(*S) += 30;
-    KurangHlt(*S, 15);
+    KurangHlt(S, 15);
 }
 
 void Nongkrong(Stats* S){
@@ -44,7 +48,7 @@ void Nongkrong(Stats* S){
         Soc(*S) = 100;
     }
     Mny(*S) -= 5;
-    KurangHlt(*S,5);
+    KurangHlt(S,5);
 }
 
 void MainGadget(Stats* S){
@@ -61,7 +65,7 @@ void MainGadget(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 5;
-    KurangHlt(*S,10);
+    KurangHlt(S,10);
 }
 
 void Mandi(Stats* S){
@@ -74,7 +78,7 @@ void Mandi(Stats* S){
         Hyg(*S) = 100;
     }
     Mny(*S) -= 5;
-    KurangHlt(*S,5);
+    KurangHlt(S,5);
 }
 
 void Olahraga(Stats* S){
@@ -91,7 +95,7 @@ void Olahraga(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 15;
-    KurangHlt(*S,10);
+    KurangHlt(S,10);
 }
 
 void Belanja(Stats* S){
@@ -104,7 +108,7 @@ void Belanja(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 40;
-    KurangHlt(*S,10);
+    KurangHlt(S,10);
 }
 
 void MainBG(Stats* S){
@@ -121,7 +125,7 @@ void MainBG(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 10;
-    KurangHlt(*S,5);
+    KurangHlt(S,5);
 }
 
 void Nonton(Stats* S){
@@ -134,7 +138,7 @@ void Nonton(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 10;
-    KurangHlt(*S, 5);
+    KurangHlt(S, 5);
 }
 
 void Bersih(Stats* S){
@@ -151,9 +155,5 @@ void Bersih(Stats* S){
         Hpy(*S) = 100;
     }
     Mny(*S) -= 5;
-    KurangHlt(*S, 5);
-}
-
-void KurangHlt(Stats* S, Int W){
-    Hlt(*S) -= W;
+    KurangHlt(S, 5);
 }
