@@ -26,11 +26,14 @@ void Makan(Stats* S){
 }
 
 void Kerja(Stats* S){
-    Hpy(*S) -= 10;
+    Hpy(*S) -= 20;
     if (Hpy(*S) < 0){
         Hpy(*S) = 0;
     }
     Mny(*S) += 30;
+    if (Mny(*S) > 100){
+        Mny(*S) = 100;
+    }
     KurangHlt(S, 15);
 }
 
@@ -51,7 +54,7 @@ void Nongkrong(Stats* S){
     KurangHlt(S,5);
 }
 
-void MainGadget(Stats* S){
+void MainHP(Stats* S){
     if (Mny(*S) < 5) {
         printf("Uang tidak cukup\n");
         return;
@@ -107,7 +110,7 @@ void Belanja(Stats* S){
     if (Hpy(*S) > 100){
         Hpy(*S) = 100;
     }
-    Mny(*S) -= 40;
+    Mny(*S) -= 30;
     KurangHlt(S,10);
 }
 

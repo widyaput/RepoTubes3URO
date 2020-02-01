@@ -29,7 +29,7 @@ int main() {
         printf("Health    %d\nHygiene   %d\n", Hlt(Robot),Hyg(Robot));
         printf("Social    %d\nHappiness %d\n", Soc(Robot),Hpy(Robot));
         printf("Money     %d\n", Mny(Robot));
-        printf("Apa yang harus Hilmy lakulan?\n");
+        printf("Apa yang harus Hilmy lakukan?\n");
         scanf("%d", &choice);
         if (choice == 1) {
             Makan(S);
@@ -37,9 +37,9 @@ int main() {
             Kerja(S);
         } else if (choice == 3) {
             Nongkrong(S);
-        } /* else if (choice == 4) {
+        } else if (choice == 4) {
             MainHP(S);
-        } */ else if (choice == 5) {
+        } else if (choice == 5) {
             Mandi(S);
         } else if (choice == 6) {
             Olahraga(S);
@@ -57,8 +57,14 @@ int main() {
     } while (Hlt(Robot)> 0 && Hpy(Robot)> 0);
 
     if(Hlt(Robot) <= 0) {
+    	printf("Health    %d\nHygiene   %d\n", Hlt(Robot),Hyg(Robot));
+        printf("Social    %d\nHappiness %d\n", Soc(Robot),Hpy(Robot));
+        printf("Money     %d\n", Mny(Robot));
         printf("Nyawa Hilmy sudah habis.");
     } else if(Hpy(Robot) <= 0) {
+    	printf("Health    %d\nHygiene   %d\n", Hlt(Robot),Hyg(Robot));
+        printf("Social    %d\nHappiness %d\n", Soc(Robot),Hpy(Robot));
+        printf("Money     %d\n", Mny(Robot));
         printf("Hilmy tidak bahagia. Dia meninggal karena depresi.");
     }
 
