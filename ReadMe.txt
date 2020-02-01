@@ -1,10 +1,10 @@
 Selamat datang di permainan "Hilmy's Life"
 Hilmy adalah seorang robot yang hidup di dunia "EVA"
-Walau Hilmy adalah robot, ia punya beberapa status yang mirip dengan status manusi
+Walau Hilmy adalah robot, ia punya beberapa status yang mirip dengan status manusia
 
 Yang pertama adalah Happiness, status yang berkaitan dengan "kesenangan"
 Lalu ada Hygiene, status yang berhubungan dengan kebersihan
-Ada pula Social, walau Hilmy jomlo, dia punya beberapa teman
+Ada pula Social, walau Hilmy jomblo, dia punya beberapa teman
 Selanjutnya ada Health, kekuatan yang masih dimiliki Hilmy
 Terakhir ada Money, zaman sekarang gak ada yang gratis, bro
 
@@ -31,4 +31,8 @@ mempunyai syarat minimum uang yang dibutuhkan.
 Ketika status berada di atas 100, otomatis status akan dibatasi di angka 100
 demikian pula ketika status di bawah 0.
 
-Dapatkah kalian menggunakan kehidupan Hilmy sebaik-baiknya?
+Dalam game ini, terdapat ronde-ronde, dan setiap ronde memiliki status minumum untuk melewatinya.
+Untuk setiap ronde yang dilalui, serta setiap kegiatan yang dilakukan, skor kalian akan bertambah !.
+Apabila kalian berhasil mencetak skor tertinggi, maka skor kalian akan tersimpan.
+
+Dapatkah kalian menggunakan kehidupan Hilmy sebaik-baiknya dan meraih skor setinggi mungkin ?
