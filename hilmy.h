@@ -12,6 +12,7 @@ typedef struct{
     int Soc;
     int Hyg;
     int Mny;
+    int skor;
 }   Stats;
 
 // Selektor
@@ -20,8 +21,12 @@ typedef struct{
 #define Soc(S) (S).Soc
 #define Hyg(S) (S).Hyg
 #define Mny(S) (S).Mny
+#define skor(S) (S).skor
 
 //Konstruktor
+void TampilkanStats(Stats* S);
+//Menampilkan stats hilmy
+
 void StartStats(Stats* S);
 //Inisiasi status awal
 
@@ -58,5 +63,6 @@ void Bersih(Stats* S);
 void KurangHlt(Stats* S, int W);
 //fungsi untuk mengurangi health tiap ronde
 
-
+void TbhSkor(Stats* S, int k);
+//Fungsi untuk menambah skor player
 #endif
