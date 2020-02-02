@@ -68,7 +68,7 @@ int main() {
 				} if(Hpy(Robot)<=10){
 					printf("PERINGATAN ! Hilmy tidak bahagia !. Pilihlah kegiatan yang tepat sebelum hilmy depresi.\n");
 				}
-				printf("Apa yang harus Hilmy lakulan?\n");
+				printf("Apa yang harus Hilmy lakukan?\n");
 				scanf("%d", &choice);
 				if (choice == 1) {
 					Makan(S);

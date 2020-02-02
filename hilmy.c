@@ -46,6 +46,9 @@ void Kerja(Stats* S){
         Hpy(*S) = 0;
     }
     Mny(*S) += 30;
+    if (Mny(*S) > 100){
+        Mny(*S) = 100;
+    }
     KurangHlt(S, 15);
     TbhSkor(S, 5);
 }
